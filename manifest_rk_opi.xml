@@ -4,7 +4,7 @@
 
   <!-- Orange Pi -->
 
-  </project>
+
     <project path="device/opi/opi5_pro" name="dvab-sarma/android_device_opi_opi5_pro" remote="github" revision="android-16.0" >
     <linkfile src="mkimg.sh" dest="opi5_pro-mkimg.sh" />
     <linkfile src="wrimg.sh" dest="rpi5-wrimg.sh" />
