@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="github" fetch="https://github.com/" />
+
+  <!-- Orange Pi -->
+
+  </project>
+    <project path="device/opi/opi5_pro" name="dvab-sarma/android_device_opi_opi5_pro" remote="github" revision="android-16.0" >
+    <linkfile src="mkimg.sh" dest="opi5_pro-mkimg.sh" />
+    <linkfile src="wrimg.sh" dest="rpi5-wrimg.sh" />
+  </project>
+
+  <project path="device/opi/opi5_pro-kernel" name="dvab-sarma/android_device_opi_opi5_pro-kernel" remote="github" revision="android-16.0" />
+
+  <project path="vendor/opi" name="dvab-sarma/proprietary_vendor_opi" remote="github" revision="android-16.0" />
+
+  <!-- Audio -->
+  <project path="external/alsa-lib" name="dvab-sarma/android_external_alsa-lib" remote="github" revision="android-16.0" />
+  <project path="external/alsa-utils" name="dvab-sarma/android_external_alsa-utils" remote="github" revision="android-16.0" />
+
+  <!-- Build -->
+  <remove-project name="platform/build" />
+  <remove-project name="platform/build/soong" />
+  <project path="build/make" name="dvab-sarma/android_build" remote="github" revision="android-16.0" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="dvab-sarma/android_build_soong" remote="github" revision="android-16.0" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Camera -->
+  <!-- <project path="external/libcamera" name="dvab-sarma/android_external_libcamera" remote="github" revision="android-16.0" />
+  <project path="external/libpisp" name="dvab-sarma/android_external_libpisp" remote="github" revision="android-16.0" />
+  <project path="external/libyaml" name="dvab-sarma/android_external_libyaml" remote="github" revision="android-16.0" />
+  <project path="external/libyuv_chromium" name="dvab-sarma/android_external_libyuv_chromium" remote="github" revision="android-16.0" /> -->
+
+  <!-- FFmpeg -->
+  <project path="external/ffmpeg" name="dvab-sarma/android_external_ffmpeg" remote="github" revision="android-16.0" />
+  <project path="external/ffmpeg_codec2" name="dvab-sarma/android_external_ffmpeg_codec2" remote="github" revision="android-16.0" />
+  <project path="external/libudev-zero" name="dvab-sarma/android_external_libudev-zero" remote="github" revision="android-16.0" />
+
+  <!-- Graphics -->
+  <remove-project name="platform/external/drm_hwcomposer" />
+  <remove-project name="platform/external/mesa3d" />
+  <remove-project name="platform/external/minigbm" />
+  <project path="external/drm_hwcomposer" name="dvab-sarma/android_external_drm_hwcomposer" remote="github" revision="android-16.0" />
+  <project path="external/mesa3d" name="dvab-sarma/android_external_mesa3d" remote="github" revision="android-16.0" />
+  <project path="external/minigbm" name="dvab-sarma/android_external_minigbm" remote="github" revision="android-16.0" />
+
+  <!-- v4l2_codec2 -->
+  <remove-project name="platform/external/v4l2_codec2" />
+  <project path="external/v4l2_codec2" name="dvab-sarma/android_external_v4l2_codec2" remote="github" revision="android-16.0" />
+
+  <!-- Wifi -->
+  <remove-project name="platform/packages/modules/Wifi" />
+  <project path="packages/modules/Wifi" name="dvab-sarma/android_packages_modules_Wifi" remote="github" revision="android-16.0" />
+
+</manifest>
