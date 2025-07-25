@@ -89,4 +89,5 @@ The rockchip drm was patched in this kernel attached in this github.  So, it is 
 
 ***
 **Credits:**
-The android userspace code is based on KonstaKang's raspberry-vanilla aosp project. A huge thanks to KonstaKang and raspberry-vanilla team.
+- The android userspace code is based on KonstaKang's raspberry-vanilla aosp project. A huge thanks to KonstaKang and raspberry-vanilla team.
+- A huge thanks to Masayuki Araki ([Misaka](https:://github.com/misakazip)) for his contribution in developing and testing  this build for Orange Pi 5.
