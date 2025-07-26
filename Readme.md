@@ -82,6 +82,10 @@ The rockchip drm was patched in this kernel attached in this github.  So, it is 
 - [Linux kernel](https://github.com/dvab-sarma/android_kernel_manifest/issues)
 
 ***
+### Prebuilt Images
+- You can download the android 15 / 16 prebuilt images for various boards from this google drive link. [Here](https://drive.google.com/drive/folders/1d5ifTQ6-efLuzAD8wl57woRwLUpaYbc-)
+
+***
 
 ### Wiki:
 
