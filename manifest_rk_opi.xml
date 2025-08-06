@@ -4,13 +4,20 @@
 
   <!-- Orange Pi -->
 
-
+  <!-- Orange Pi 5 Pro -->
     <project path="device/opi/opi5_pro" name="dvab-sarma/android_device_opi_opi5_pro" remote="github" revision="android-16.0" >
     <linkfile src="mkimg.sh" dest="opi5_pro-mkimg.sh" />
-    <linkfile src="wrimg.sh" dest="rpi5-wrimg.sh" />
   </project>
+  
+    <!-- Orange Pi 3B v2.1 -->
+    <project path="device/opi/opi3b" name="dvab-sarma/android_device_opi_opi3b" remote="github" revision="android-16.0" >
+    <linkfile src="mkimg.sh" dest="opi3b-mkimg.sh" />
 
+  </project>
+  <!-- Orange Pi 5 pro kernel-->
   <project path="device/opi/opi5_pro-kernel" name="dvab-sarma/android_device_opi_opi5_pro-kernel" remote="github" revision="android-16.0" />
+    <!-- Orange Pi 3b Kernel-->
+  <project path="device/opi/opi3b-kernel" name="dvab-sarma/android_device_opi_opi3b-kernel" remote="github" revision="android-16.0" />
 
   <project path="vendor/opi" name="dvab-sarma/proprietary_vendor_opi" remote="github" revision="android-16.0" />
 
