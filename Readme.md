@@ -1,4 +1,4 @@
-### Device specific configuration to build AOSP Android 16 for Orange Pi 5 Pro
+### Device specific configuration to build AOSP Android 16 for Orange Pi 5 series boards with rk3588s and Orange Pi 3b v2.1(rk3566s)
 
 ***
 
