@@ -53,17 +53,53 @@ lunch aosp_opi5_pro_tv-bp2a-userdebug
 lunch aosp_opi5_pro_car-bp2a-userdebug
 ```
 
+for (`opi 3b`): 
+```
+lunch aosp_opi3b-bp2a-userdebug
+```
+```
+lunch aosp_opi3b_tv-bp2a-userdebug
+```
+```
+lunch aosp_opi3b_car-bp2a-userdebug
+```
+
 7. Compile:
 
 ```
 make bootimage systemimage vendorimage -j$(nproc)
 ```
 
-8. Make flashable image for the device (`opi5_pro`):
+8. Make flashable image for the device
+ (`opi5_pro`): 
 
 ```
 ./opi5_pro-mkimg.sh
 ```
+(`opi3b`): 
+```
+./opi3b-mkimg.sh
+```
+
+9. ONLY FOR Orangepi 3b boards - 
+
+The current build has a bug where it causes kernel panic in opi 3b boards after burning the image. It is necessary to follow these steps to get rid of the kernel panic - 
+
+Solution 1 - 
+a. after generating the .img file using `./opi3b-mkimg.sh` command, execute this command to mount the .img with write access - 
+```
+gnome-disk-image-mounter --writable OrangePiAOSP-20250730-opi3b.img
+```
+Note - replace `OrangePiAOSP-20250730-opi3b.img` with the latest generated image.
+
+b. after mounting it as writable image, open the boot partition of the .img in file explorer and copy and paste the `Image` file (kernel image) from `device/opi/opi3b-kernel` into the boot partition.
+
+c. safely eject the .img file and burn the image onto an sd card and boot the board.
+
+Solution 2 -
+a. If solution 1 doesn't work, burn the .img file and insert the sd card in pc.
+b. open the boot partition of the sd card, manually copy and copy and paste the `Image` file (kernel image) from `device/opi/opi3b-kernel` into the boot partition.
+c. Safely eject the SD card and power on the board with sd card in it.
 
 
 Also look into [Linux kernel build instructions](https://github.com/dvab-sarma/android_kernel_manifest/tree/android-16.0).
