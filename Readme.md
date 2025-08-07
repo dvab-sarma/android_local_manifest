@@ -98,7 +98,7 @@ c. safely eject the .img file and burn the image onto an sd card and boot the bo
 
 Solution 2 -
 a. If solution 1 doesn't work, burn the .img file and insert the sd card in pc.
-b. open the boot partition of the sd card, manually copy and copy and paste the `Image` file (kernel image) from `device/opi/opi3b-kernel` into the boot partition.
+b. open the boot partition of the sd card, manually copy and paste the `Image` file (kernel image) from `device/opi/opi3b-kernel` into the boot partition.
 c. Safely eject the SD card and power on the board with sd card in it.
 
 
