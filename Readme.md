@@ -71,7 +71,7 @@ make bootimage systemimage vendorimage -j$(nproc)
 ```
 
 8. Make flashable image for the device
- (`opi5_pro`): 
+ (`opi5 series boards`): 
 
 ```
 ./opi5_pro-mkimg.sh
