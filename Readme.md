@@ -129,10 +129,8 @@ The rockchip drm was patched in this kernel attached in this github.  So, it is 
 
 
 ### TODO:
-- Currently developing android 16 for orange pi 3b v2.1. It works but need to add autoboot.
 - Camera drivers need to be developed for rockchip based devices.
 - Audio needs to be configured properly.
-- Modify the Autoboot script such that a single image can be used for all devices with rk3588s or rk3566s.
 
 ***
 **Credits:**
