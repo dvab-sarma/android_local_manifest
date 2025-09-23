@@ -125,7 +125,9 @@ The rockchip drm was patched in this kernel attached in this github.  So, it is 
 
 ### Wiki:
 
+- [Main Wiki](https://github.com/dvab-sarma/android_local_manifest/wiki)
 - [Mesa3D](https://github.com/dvab-sarma/android_local_manifest/wiki/Mesa3D)
+
 
 
 ### TODO:
