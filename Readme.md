@@ -131,6 +131,9 @@ The rockchip drm was patched in this kernel attached in this github.  So, it is 
 
 
 ### TODO:
+- Currently, shifting to mainline mesa3d as complete android hal is implemented for panfrost's driver. Testing works great
+need to push it to production.
+- Currently, building vp9, av1, hevc, avc hardware based decoders using ffmpeg( had to downgrade ffmpeg 7.1.1 to 7.1), it's still in  testing phase.
 - Camera drivers need to be developed for rockchip based devices.
 - Audio needs to be configured properly.
 
