@@ -66,7 +66,12 @@ make bootimage systemimage vendorimage -j$(nproc)
 ```
 ./opi5_pro-mkimg.sh
 ```
+***
+### UPDATE FOR RK3566 (Orange pi 3b v2.1)
 
+- Currently, this update supports for Rockchip's rk3588 SoC, Would be releasing for rk3566 in near future. 
+
+***
 
 
 Also look into [Linux kernel build instructions](https://github.com/dvab-sarma/android_kernel_manifest/tree/android-16.0).
@@ -105,3 +110,4 @@ The rockchip drm was patched in this kernel attached in this github.  So, it is 
 **Credits:**
 - The android userspace code is based on KonstaKang's raspberry-vanilla aosp project. A huge thanks to KonstaKang and raspberry-vanilla team.
 - A huge thanks to Masayuki Araki ([Misaka](https://github.com/misakazip)) for his contribution in developing and testing  this build for Orange Pi 5.
+
