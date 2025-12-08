@@ -6,7 +6,7 @@
 
   <!-- Orange Pi 5 Pro -->
     <project path="device/opi/opi5_pro" name="dvab-sarma/android_device_opi_opi5_pro" remote="github" revision="android-16.0_r3" >
-    <linkfile src="mkimg.sh" dest="opi5_pro-mkimg.sh" />
+    <linkfile src="mkimg_gpt.sh" dest="opi5_pro-mkimg.sh" />
   </project>
 
     <!-- Orange Pi 3B v2.1 -->
