@@ -13,7 +13,7 @@
     <!-- <project path="device/opi/opi3b" name="dvab-sarma/android_device_opi_opi3b" remote="github" revision="android-16.0" >
     <linkfile src="mkimg.sh" dest="opi3b-mkimg.sh" /> -->
 
-  </project>
+  <!-- </project> -->
   <!-- Orange Pi 5 pro kernel-->
   <project path="device/opi/opi5_pro-kernel" name="dvab-sarma/android_device_opi_opi5_pro-kernel" remote="github" revision="android-16.0_r3" />
     <!-- Orange Pi 3b Kernel-->
